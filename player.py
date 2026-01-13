@@ -41,7 +41,7 @@ class Player(Entity):
 		self.last_attacked = False
 		self.moved = False
 		self.last_moved = False
-		
+
 		self.grappled_by = []
 		self.worn_rings = []
 		
@@ -900,6 +900,7 @@ class Player(Entity):
 				tile.symbol = ">"
 				tile.stair = True
 				break
+	
 	
 	def inventory_menu(self):
 		from gameobj import GameTextMenu

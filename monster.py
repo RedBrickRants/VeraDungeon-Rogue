@@ -689,9 +689,9 @@ class Monster(Entity):
 			if spell.msg:
 				g.print_msg(spell.msg.format(self.name))
 			for x, y in line:
-				 g.set_projectile_pos(x, y)
-				 g.draw_board()
-				 time.sleep(0.03)
+				g.set_projectile_pos(x, y)
+				g.draw_board()
+				time.sleep(0.03)
 			g.clear_projectile()
 			spell.on_hit_effect(self, target)
 		elif spell.efftype == "cone":

@@ -144,7 +144,7 @@ class Entity:
 				if found:
 					break
 			else:
-				 return False
+				return False
 		self.place_at(x, y)
 		return True
 		
